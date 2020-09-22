@@ -1,27 +1,20 @@
 package galgeleg;
 
-import galgeleg.Galgelogik;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 /**
- * Eksempel på en JUnit-test, som kører på din PC, hvilket er langt hurtigere end
- * at installere og køre den på en Android-enhed
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * Eksempel på en JUnit-test
  */
-public class GalgelogikUnitTest {
+public class GalgelogikTest {
 
   @Test
   public void afprøvMedSkovsnegl() {
     Galgelogik spil = new Galgelogik();
     spil.muligeOrd.clear();
     spil.muligeOrd.add("skovsnegl");
-    spil.nulstil();
+    spil.startNytSpil();
 
     spil.gætBogstav("e");
     spil.gætBogstav("s");
